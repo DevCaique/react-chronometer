@@ -43,10 +43,8 @@ export function App() {
           <span>{String(seconds).padStart(2, "0")}</span>
         </div>
         <div className="btn__area">
-          <button onClick={startStop}>
-            {intervalId ? "parar" : "iniciar"}
-          </button>
-          <button onClick={reset}>resetar</button>
+          <button onClick={startStop}>{intervalId ? "Stop" : "Start"}</button>
+          <button onClick={reset}>Reset</button>
         </div>
       </div>
     </div>
